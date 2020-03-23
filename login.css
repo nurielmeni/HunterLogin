@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 1.5vw;
-  font-family: "Assistant", sans-serif;
+  font-family: 'Assistant', sans-serif;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -35,8 +35,69 @@ body {
   justify-content: space-between;
 }
 
+.login-wrap > main:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 .login-wrap > main > section {
   padding-left: 13%;
+}
+
+.login-wrap > main img.logo {
+  width: 20%;
+  margin-top: 7.7%;
+  margin-bottom: 3%;
+}
+
+.login-wrap > main p.actions a {
+  text-decoration: none;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.4em 1em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dc9e47;
+  color: #dc9e47;
+  background-color: #ffffff;
+}
+
+.login-wrap > main p.actions {
+  margin-top: 1em;
+}
+
+.login-wrap.heb > main p.actions a {
+  font-size: 0.8em;
+}
+
+.login-wrap > main p.comment {
+  font-size: 0.74em;
+}
+
+.login-wrap > main img.main-image {
+  position: absolute;
+  bottom: 0.45em;
+}
+
+.login-wrap.heb > main:before {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+.login-wrap.heb > main img.main-image.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
 }
 
 .login-wrap.heb > main > section {
@@ -56,29 +117,9 @@ body {
 }
 
 .login-wrap > main.quick-hire:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("./images/quick-hire-bg.svg") no-repeat;
-  background-position: 22% 55%;
-  background-size: 180vw;
-  z-index: -1;
-}
-
-.login-wrap.heb > main.quick-hire:before {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-}
-
-.login-wrap > main.quick-hire img.logo {
-  width: 20%;
-  margin-top: 7.7%;
-  margin-bottom: 3%;
+  background: url('./images/quick-hire-bg.svg') no-repeat;
+  background-position: 20% 56%;
+  background-size: 194vw;
 }
 
 .login-wrap.pol > main.quick-hire img.logo {
@@ -104,33 +145,7 @@ body {
   font-size: 1.28em;
 }
 
-.login-wrap > main.quick-hire p.actions {
-  margin-top: 1em;
-}
-
-.login-wrap > main.quick-hire p.actions a {
-  text-decoration: none;
-  font-size: 0.65em;
-  font-weight: bold;
-  padding: 0.4em;
-  border-radius: 3px;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-  border: solid 1px #dc9e47;
-  color: #dc9e47;
-  background-color: #ffffff;
-}
-
-.login-wrap.heb > main.quick-hire p.actions a {
-  font-size: 0.8em;
-}
-
-.login-wrap > main.quick-hire p.comment {
-  font-size: 0.74em;
-}
-
 .login-wrap > main.quick-hire img.main-image {
-  position: absolute;
-  bottom: 0.45em;
   right: 8vw;
   height: 58vh;
 }
@@ -138,15 +153,6 @@ body {
 .login-wrap.heb > main.quick-hire img.main-image {
   right: unset;
   left: 8vw;
-}
-
-.login-wrap.heb > main img.main-image.flip {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 }
 
 @media (orientation: portrait) {
@@ -163,23 +169,9 @@ body {
 }
 
 .login-wrap > main.perfect-can:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("./images/perfect-can-bg.svg") no-repeat;
+  background: url('./images/perfect-can-bg.svg') no-repeat;
   background-position: 30% 50%;
   background-size: 180vw;
-  z-index: -1;
-}
-
-.login-wrap.heb > main.perfect-can:before {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
 }
 
 .login-wrap.heb main.perfect-can p.promo.first {
@@ -217,37 +209,12 @@ body {
   font-size: 1.28em;
 }
 
-.login-wrap > main.perfect-can p.actions {
-  margin-top: 1em;
-}
-
-.login-wrap > main.perfect-can p.actions a {
-  text-decoration: none;
-  font-size: 0.65em;
-  font-weight: bold;
-  padding: 0.4em;
-  border-radius: 3px;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-  border: solid 1px #dc9e47;
-  color: #dc9e47;
-  background-color: #ffffff;
-}
-
-.login-wrap.heb > main.perfect-can p.actions a {
-  font-size: 0.8em;
-}
-
-.login-wrap > main.perfect-can p.comment {
-  font-size: 0.74em;
-}
-
 .login-wrap > main.perfect-can > section.bottom {
   padding-right: 16%;
   padding-left: 16%;
 }
 
 .login-wrap > main.perfect-can img.main-image {
-  position: absolute;
   bottom: 1em;
   right: 8vw;
   height: 69vh;
@@ -277,23 +244,9 @@ body {
 }
 
 .login-wrap > main.employer-branding:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("./images/employer-branding-bg.svg") no-repeat;
-  background-position: 17% 66%;
-  background-size: 234vw;
-  z-index: -1;
-}
-
-.login-wrap.heb > main.employer-branding:before {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+  background: url('./images/employer-branding-bg.svg') no-repeat;
+  background-position: 17% 62%;
+  background-size: 186vw;
 }
 
 .login-wrap main.employer-branding p.promo.first {
@@ -323,28 +276,7 @@ body {
   font-size: 1.28em;
 }
 
-.login-wrap > main.employer-branding p.actions {
-  margin-top: 1em;
-}
-
-.login-wrap > main.employer-branding p.actions a {
-  text-decoration: none;
-  font-size: 0.65em;
-  font-weight: bold;
-  padding: 0.4em;
-  border-radius: 3px;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-  border: solid 1px #dc9e47;
-  color: #dc9e47;
-  background-color: #ffffff;
-}
-
-.login-wrap.heb > main.employer-branding p.actions a {
-  font-size: 0.8em;
-}
-
 .login-wrap > main.employer-branding img.main-image {
-  position: absolute;
   bottom: 1em;
   right: 22vw;
   height: 67vh;
@@ -362,7 +294,6 @@ body {
   }
 }
 
-
 /*********** JOB SITE *************/
 .login-wrap > main.job-site > section {
   padding-left: 16%;
@@ -375,28 +306,18 @@ body {
 }
 
 .login-wrap > main.job-site:before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("./images/job-site-bg.svg") no-repeat;
-  background-position: 17% 55%;
-  background-size: 222vw;
-  z-index: -1;
+  background: url('./images/job-site-bg.svg') no-repeat;
+  background-position: 17% 52%;
+  background-size: 182vw;
 }
 
-.login-wrap.heb > main.job-site:before {
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+.login-wrap.heb > main.job-site > section {
+  padding-right: 18%;
 }
 
 .login-wrap main.job-site p.promo.first {
   margin-top: 1.8em;
-  color:#f2b55f;
+  color: #f2b55f;
   font-weight: bold;
 }
 
@@ -422,28 +343,7 @@ body {
   font-size: 1.28em;
 }
 
-.login-wrap > main.job-site p.actions {
-  margin-top: 1em;
-}
-
-.login-wrap > main.job-site p.actions a {
-  text-decoration: none;
-  font-size: 0.65em;
-  font-weight: bold;
-  padding: 0.4em;
-  border-radius: 3px;
-  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
-  border: solid 1px #dc9e47;
-  color: #dc9e47;
-  background-color: #ffffff;
-}
-
-.login-wrap.heb > main.job-site p.actions a {
-  font-size: 0.8em;
-}
-
 .login-wrap > main.job-site img.main-image {
-  position: absolute;
   bottom: 1em;
   right: 14vw;
   height: 67vh;
@@ -456,6 +356,78 @@ body {
 
 @media (orientation: portrait) {
   .login-wrap > main.job-site:before {
+    background-position: 15% 50%;
+    background-size: 310vw;
+  }
+}
+
+/*********** TIME HUNTER *************/
+.login-wrap > main.time-hunter > section {
+  padding-left: 16%;
+}
+
+.login-wrap > main.time-hunter {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-wrap > main.time-hunter:before {
+  background: url('./images/time-hunter-bg.svg') no-repeat;
+  background-position: -16% 64%;
+  background-size: 140vw;
+}
+
+.login-wrap > main.time-hunter img.logo {
+  width: 30%;
+}
+
+.login-wrap main.time-hunter p.promo.first {
+  margin-top: 1.8em;
+  color: #f2b55f;
+  font-weight: bold;
+}
+
+.login-wrap > main.time-hunter p.promo {
+  font-size: 2.4em;
+  line-height: 1.2em;
+}
+
+.login-wrap.pol > main.time-hunter p.promo,
+.login-wrap.heb > main.time-hunter p.promo {
+  font-size: 1.85em;
+}
+
+.login-wrap > main.time-hunter p.details.first {
+  margin-top: 1.4em;
+}
+
+.login-wrap > main.time-hunter p.details {
+  font-size: 1.1em;
+}
+
+.login-wrap.heb > main.time-hunter p.details {
+  font-size: 1.28em;
+}
+
+.login-wrap > main.time-hunter img.main-image {
+  bottom: 1em;
+  right: 30vw;
+  height: 62vh;
+}
+
+.login-wrap.pol > main.time-hunter img.main-image {
+  right: 32vw;
+  height: 58vh;
+}
+
+.login-wrap.heb > main.time-hunter img.main-image {
+  right: unset;
+  left: 30vw;
+}
+
+@media (orientation: portrait) {
+  .login-wrap > main.time-hunter:before {
     background-position: 15% 50%;
     background-size: 310vw;
   }
