@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.login-wrap {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5vw;
+  font-family: 'Assistant', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-wrap.heb {
+  direction: rtl;
+}
+
+.login-wrap * {
+  box-sizing: border-box;
+}
+
+.login-wrap p {
+  margin: 0;
+  padding: 0;
+}
+
+.login-wrap > main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-wrap > main > section {
+  padding-left: 13%;
+}
+
+.login-wrap.heb > main > section {
+  padding-left: 0;
+  padding-right: 14%;
+}
+
+.login-wrap > main > section.bottom {
+  margin-bottom: 5%;
+}
+
+/******** QUICK HIRE *********/
+.login-wrap > main.quick-hire {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-wrap > main.quick-hire:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('./images/quick-hire-bg.svg') no-repeat;
+  background-position: 22% 55%;
+  background-size: 180vw;
+  z-index: -1;
+}
+
+.login-wrap.heb > main.quick-hire:before {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+.login-wrap > main.quick-hire img.logo {
+  width: 20%;
+  margin-top: 7.7%;
+  margin-bottom: 3%;
+}
+
+.login-wrap.pol > main.quick-hire img.logo {
+  margin-top: 6%;
+  margin-bottom: 1.8%;
+}
+
+.login-wrap > main.quick-hire p.promo {
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+.login-wrap.pol > main.quick-hire p.promo,
+.login-wrap.heb > main.quick-hire p.promo {
+  font-size: 1.85em;
+}
+
+.login-wrap > main.quick-hire p.details {
+  font-size: 1.1em;
+}
+
+.login-wrap.heb > main.quick-hire p.details {
+  font-size: 1.28em;
+}
+
+.login-wrap > main.quick-hire p.actions {
+  margin-top: 1em;
+}
+
+.login-wrap > main.quick-hire p.actions a {
+  text-decoration: none;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.4em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dc9e47;
+  color: #dc9e47;
+  background-color: #ffffff;
+}
+
+.login-wrap.heb > main.quick-hire p.actions a {
+  font-size: 0.8em;
+}
+
+.login-wrap > main.quick-hire p.comment {
+  font-size: 0.74em;
+}
+
+.login-wrap > main.quick-hire img.main-image {
+  position: absolute;
+  bottom: 0.45em;
+  right: 8vw;
+  height: 58vh;
+}
+
+.login-wrap.heb > main.quick-hire img.main-image {
+  right: unset;
+  left: 8vw;
+}
+
+.login-wrap.heb > main img.main-image.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+@media (orientation: portrait) {
+  .login-wrap > main.quick-hire:before {
+    background-position: 16% 55%;
+    background-size: 340vw;
+  }
+}
+/*********** PERFECT CANDIDATE *************/
+.login-wrap > main.perfect-can {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-wrap > main.perfect-can:before {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('./images/perfect-can-bg.svg') no-repeat;
+  background-position: 30% 50%;
+  background-size: 180vw;
+  z-index: -1;
+}
+
+.login-wrap.heb > main.perfect-can:before {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+.login-wrap.heb main.perfect-can p.promo.first {
+  font-weight: normal;
+  font-size: 1.6em;
+}
+
+.login-wrap main.perfect-can p.promo.first {
+  margin-top: 2em;
+}
+
+.login-wrap > main.perfect-can p.promo {
+  font-size: 2.4em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.login-wrap.pol > main.perfect-can p.promo,
+.login-wrap.heb > main.perfect-can p.promo {
+  font-size: 1.85em;
+}
+
+.login-wrap > main.perfect-can p.details.first {
+  margin-top: 1.4em;
+}
+
+.login-wrap > main.perfect-can p.details {
+  font-size: 1.1em;
+}
+
+.login-wrap.heb > main.perfect-can p.details {
+  font-size: 1.28em;
+}
+
+.login-wrap > main.perfect-can p.actions {
+  margin-top: 1em;
+}
+
+.login-wrap > main.perfect-can p.actions a {
+  text-decoration: none;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.4em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dc9e47;
+  color: #dc9e47;
+  background-color: #ffffff;
+}
+
+.login-wrap.heb > main.perfect-can p.actions a {
+  font-size: 0.8em;
+}
+
+.login-wrap > main.perfect-can p.comment {
+  font-size: 0.74em;
+}
+
+.login-wrap > main.perfect-can img.main-image {
+  position: absolute;
+  bottom: 1em;
+  right: 8vw;
+  height: 72vh;
+}
+
+.login-wrap.heb > main.perfect-can img.main-image {
+  right: unset;
+  left: 8vw;
+}
+
+@media (orientation: portrait) {
+  .login-wrap > main.perfect-can:before {
+    background-position: 20% 45%;
+    background-size: 310vw;
+  }
+}
