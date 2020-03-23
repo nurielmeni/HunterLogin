@@ -184,6 +184,9 @@ body {
 
 .login-wrap.heb main.perfect-can p.promo.first {
   font-weight: normal;
+}
+
+.login-wrap.heb main.perfect-can p.promo.small {
   font-size: 1.6em;
 }
 
@@ -238,6 +241,11 @@ body {
   font-size: 0.74em;
 }
 
+.login-wrap > main.perfect-can > section.bottom {
+  padding-right: 16%;
+  padding-left: 16%;
+}
+
 .login-wrap > main.perfect-can img.main-image {
   position: absolute;
   bottom: 1em;
@@ -253,6 +261,202 @@ body {
 @media (orientation: portrait) {
   .login-wrap > main.perfect-can:before {
     background-position: 20% 45%;
+    background-size: 310vw;
+  }
+}
+
+/*********** EMPLOYER BRANDING *************/
+.login-wrap > main.employer-branding > section {
+  padding-left: 16%;
+}
+
+.login-wrap > main.employer-branding {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-wrap > main.employer-branding:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("./images/employer-branding-bg.svg") no-repeat;
+  background-position: 17% 66%;
+  background-size: 234vw;
+  z-index: -1;
+}
+
+.login-wrap.heb > main.employer-branding:before {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.login-wrap main.employer-branding p.promo.first {
+  margin-top: 1.8em;
+}
+
+.login-wrap > main.employer-branding p.promo {
+  font-size: 2.4em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.login-wrap.pol > main.employer-branding p.promo,
+.login-wrap.heb > main.employer-branding p.promo {
+  font-size: 1.85em;
+}
+
+.login-wrap > main.employer-branding p.details.first {
+  margin-top: 1.4em;
+}
+
+.login-wrap > main.employer-branding p.details {
+  font-size: 1.1em;
+}
+
+.login-wrap.heb > main.employer-branding p.details {
+  font-size: 1.28em;
+}
+
+.login-wrap > main.employer-branding p.actions {
+  margin-top: 1em;
+}
+
+.login-wrap > main.employer-branding p.actions a {
+  text-decoration: none;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.4em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dc9e47;
+  color: #dc9e47;
+  background-color: #ffffff;
+}
+
+.login-wrap.heb > main.employer-branding p.actions a {
+  font-size: 0.8em;
+}
+
+.login-wrap > main.employer-branding img.main-image {
+  position: absolute;
+  bottom: 1em;
+  right: 22vw;
+  height: 67vh;
+}
+
+.login-wrap.heb > main.employer-branding img.main-image {
+  right: unset;
+  left: 22vw;
+}
+
+@media (orientation: portrait) {
+  .login-wrap > main.employer-branding:before {
+    background-position: 15% 50%;
+    background-size: 310vw;
+  }
+}
+
+
+/*********** JOB SITE *************/
+.login-wrap > main.job-site > section {
+  padding-left: 16%;
+}
+
+.login-wrap > main.job-site {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.login-wrap > main.job-site:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("./images/job-site-bg.svg") no-repeat;
+  background-position: 17% 55%;
+  background-size: 222vw;
+  z-index: -1;
+}
+
+.login-wrap.heb > main.job-site:before {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.login-wrap main.job-site p.promo.first {
+  margin-top: 1.8em;
+  color:#f2b55f;
+  font-weight: bold;
+}
+
+.login-wrap > main.job-site p.promo {
+  font-size: 2.4em;
+  line-height: 1.2em;
+}
+
+.login-wrap.pol > main.job-site p.promo,
+.login-wrap.heb > main.job-site p.promo {
+  font-size: 1.85em;
+}
+
+.login-wrap > main.job-site p.details.first {
+  margin-top: 1.4em;
+}
+
+.login-wrap > main.job-site p.details {
+  font-size: 1.1em;
+}
+
+.login-wrap.heb > main.job-site p.details {
+  font-size: 1.28em;
+}
+
+.login-wrap > main.job-site p.actions {
+  margin-top: 1em;
+}
+
+.login-wrap > main.job-site p.actions a {
+  text-decoration: none;
+  font-size: 0.65em;
+  font-weight: bold;
+  padding: 0.4em;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #dc9e47;
+  color: #dc9e47;
+  background-color: #ffffff;
+}
+
+.login-wrap.heb > main.job-site p.actions a {
+  font-size: 0.8em;
+}
+
+.login-wrap > main.job-site img.main-image {
+  position: absolute;
+  bottom: 1em;
+  right: 14vw;
+  height: 67vh;
+}
+
+.login-wrap.heb > main.job-site img.main-image {
+  right: unset;
+  left: 14vw;
+}
+
+@media (orientation: portrait) {
+  .login-wrap > main.job-site:before {
+    background-position: 15% 50%;
     background-size: 310vw;
   }
 }
