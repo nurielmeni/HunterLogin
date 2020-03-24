@@ -49,7 +49,7 @@ body {
 
 .login-wrap > main img.logo {
   width: 20%;
-  margin-top: 7.7%;
+  margin-top: 6.6%;
   margin-bottom: 3%;
 }
 
@@ -278,8 +278,8 @@ body {
 
 .login-wrap > main.employer-branding img.main-image {
   bottom: 1em;
-  right: 22vw;
-  height: 67vh;
+  right: 20vw;
+  height: 65vh;
 }
 
 .login-wrap.heb > main.employer-branding img.main-image {
@@ -413,7 +413,7 @@ body {
 .login-wrap > main.time-hunter img.main-image {
   bottom: 1em;
   right: 30vw;
-  height: 62vh;
+  height: 56vh;
 }
 
 .login-wrap.pol > main.time-hunter img.main-image {
